@@ -1,0 +1,16 @@
+body {
+  max-width: 800px;
+  margin: 0 auto !important;
+  padding: 60px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold !important;
+  color: black;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
