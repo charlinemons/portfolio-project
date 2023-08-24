@@ -39,10 +39,15 @@ p {
   font-weight: normal;
 }
 
+.hero {
+  padding: 120px 0;
+}
+
 .hero p {
   font-size: 28px !important;
   line-height: 120%;
   font-weight: normal;
+  text-align: right !important;
 }
 
 .row > .col {
