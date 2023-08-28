@@ -39,6 +39,15 @@ p {
   font-weight: normal;
 }
 
+a.nav-link:hover {
+  color: var(--hightlight-color);
+}
+
+.navbar-toggler {
+  color: transparent !important;
+  border: none !important;
+}
+
 .hero {
   padding: 120px 0;
 }
@@ -52,12 +61,10 @@ p {
 
 .row > .col {
   padding: 25px 0px 0px 15px;
-  /* border: 1px solid var(--text-color);
-  margin: 0 -1px -1px 0; */
 }
 
 .col h2 {
-  /* margin-right: 25rem; */
+  margin: 0 50px 10px 0 !important;
   font-size: 25px !important;
 }
 
@@ -74,6 +81,14 @@ p {
 
 .btn-branding:hover {
   color: var(--secondary-color) !important;
+}
+
+.about {
+  padding: 120px 0;
+}
+
+.about .row > .col {
+  padding: 0px 15px;
 }
 
 .contact-link {
@@ -139,9 +154,3 @@ div#copyright a:hover {
     padding: 15px 25px;
   }
 }
-
-/* @media (min-width: 900px) {
-  .contact-link {
-    font-size: 32px;
-  }
-} */
