@@ -123,17 +123,25 @@ div#copyright a:hover {
 }
 
 @media (max-width: 900px) {
-  .col h2 {
-    margin-right: 5rem;
-  }
-
-  .footer {
-    display: none;
-  }
-}
-
-@media (min-width: 900px) {
   h1 {
-    color: red;
+    font-size: 3.5rem !important;
+  }
+  .hero p {
+    font-size: 18px !important;
+  }
+  .contact-link {
+    font-size: 28px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row > .col {
+    padding: 15px 25px;
   }
 }
+
+/* @media (min-width: 900px) {
+  .contact-link {
+    font-size: 32px;
+  }
+} */
