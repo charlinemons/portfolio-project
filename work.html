@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Charline Mons - Portfolio</title>
-    <meta name="description" content="portfolio Charline Mons" />
+    <title>Charline Mons - SheCodes Portfolio</title>
+    <meta
+      name="description"
+      content="About Charline Mons, a front-end developer based in Europe"
+    />
     <link rel="stylesheet" href="stylesheet\main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -19,6 +22,10 @@
       rel="stylesheet"
     />
     <script
+      src="https://kit.fontawesome.com/f17b03c493.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
@@ -31,10 +38,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f17b03c493.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -55,13 +58,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about.html">About me</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="/work.html">Portfolio</a>
             </li>
             <li class="nav-item">
@@ -70,55 +73,65 @@
           </ul>
         </div>
       </nav>
-      <div class="hero">
-        <h2>Hello,</h2>
-        <h1>I'm Charline</h1>
-        <p>Front-end developer base in Montreal</p>
-      </div>
-      <!-- Clock  -->
-      <div class="row mt-5 mb-5">
-        <div class="col description">
-          <h2>Clock project</h2>
-          <p class="description">
-            Building a real-life project - a world clock with the times of
-            different places
-          </p>
-          <a href="" class="btn btn-branding">see the project</a>
-        </div>
+      <div class="content work">
+        <h1 class="mb-5">Take a look at what I've been working on!</h1>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <a href="https://world-clock-cm.netlify.app/" target="_blank">
+              <img
+                src="images/world-clock.png"
+                class="img-fluid mb-3 rounded"
+                alt="World clock SheCodes Project"
+            /></a>
+            <h3 class="text-center m-0">World clock</h3>
+            <p class="text-center text-muted">
+              Built with HTML, CSS and JavaScript
+            </p>
+          </div>
 
-        <div class="col images">
-          <img
-            src="images/image1.jpeg"
-            class="img-fluid"
-            alt="Weather App"
-            width=""
-            height=""
-          />
-        </div>
-      </div>
-      <!-- Weather  -->
-      <div class="row mt-5 mb-5">
-        <div class="col">
-          <h2>Weather project</h2>
-          <p class="">
-            Building an interactive application using JavaScript and integrate a
-            live API
-          </p>
-          <a href="" class="btn btn-branding">see the project</a>
-        </div>
+          <div class="col-md-6 mb-4">
+            <a href="https://weather-app-v2-cm.netlify.app/" target="_blank">
+              <img
+                src="images/weather-app.png"
+                class="img-fluid mb-3 rounded"
+                alt="weather Project SheCodes Project"
+            /></a>
+            <h3 class="text-center m-0">Weather Project</h3>
+            <p class="text-center text-muted">
+              Built with HTML, CSS and JavaScript
+            </p>
+          </div>
 
-        <div class="col">
-          <img
-            src="images/weather-app.jpeg"
-            class="img-fluid"
-            alt="Weather App"
-            width=""
-            height=""
-          />
+          <div class="col-md-6 mb-4">
+            <a
+              href="https://www.shecodes.io/workshops/shecodes-basics-0a38e50b-08de-4486-a315-73b54a6edf04/projects/1648082"
+              target="_blank"
+            >
+              <img
+                src="images/japan-app.png"
+                class="img-fluid mb-3 rounded"
+                alt="Landing Page SheCodes Project"
+            /></a>
+            <h3 class="text-center m-0">Landing-page Project</h3>
+            <p class="text-center text-muted">Built with HTML and CSS</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <a
+              href="https://www.shecodes.io/workshops/shecodes-basics-add-on-2c7defe2-7654-48da-b921-aa43bcc89a7d/projects/1656718"
+              target="_blank"
+            >
+              <img
+                src="images/ghibli-app.png"
+                class="img-fluid mb-3 rounded"
+                alt="HTML CSS SheCodes Project"
+            /></a>
+            <h3 class="text-center m-0">Hobby Project</h3>
+            <p class="text-center text-muted">Built with HTML and CSS</p>
+          </div>
         </div>
       </div>
     </div>
-
     <div id="contact" class="row">
       <div class="col">
         <a href="mailto:" target="_blank" class="contact-link"

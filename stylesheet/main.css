@@ -40,6 +40,14 @@ p {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--hightlight-color);
+}
+
 a.nav-link:hover {
   color: var(--hightlight-color);
 }
@@ -90,7 +98,7 @@ a.nav-link:hover {
   color: var(--hightlight-color) !important;
 }
 
-.about {
+.content {
   padding: 120px 0;
 }
 
@@ -98,6 +106,13 @@ a.nav-link:hover {
   padding: 0px 15px;
 }
 
+/* work page */
+.work h1 {
+  text-align: center;
+  font-size: 2.5rem !important;
+}
+
+/* Footer */
 .contact-link {
   color: var(--text-color);
   text-align: center !important;
@@ -121,14 +136,6 @@ a.nav-link:hover {
   text-align: center;
 }
 
-a {
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: var(--hightlight-color);
-}
-
 div#copyright {
   background-color: var(--text-color);
   color: var(--secondary-color);
@@ -144,11 +151,15 @@ div#copyright a:hover {
   color: var(--primary-color);
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   .col-lg-6 {
     margin: 30px 0;
   }
 
+  .row {
+    flex-direction: row !important;
+  }
   .hero h1 {
     font-size: 3rem !important;
     text-align: center !important;
@@ -162,7 +173,7 @@ div#copyright a:hover {
     text-align: center !important;
   }
 
-  .about {
+  .content {
     text-align: center;
     padding: 60px 0;
   }
@@ -183,5 +194,9 @@ div#copyright a:hover {
   }
   .row > .col {
     padding: 15px 25px;
+  }
+
+  .work h1 {
+    font-size: 1.5rem !important;
   }
 }
