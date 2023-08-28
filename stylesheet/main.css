@@ -52,6 +52,10 @@ a.nav-link:hover {
   color: var(--hightlight-color);
 }
 
+.link {
+  color: var(--text-color);
+}
+
 .navbar-toggler {
   color: transparent !important;
   border: none !important;
@@ -156,11 +160,13 @@ div#copyright a:hover {
   .col-lg-6 {
     margin: 30px 0;
   }
-
+  .col h2 {
+    margin: 0px !important;
+  }
   .row {
     flex-direction: row !important;
   }
-  .hero h1 {
+  h1 {
     font-size: 3rem !important;
     text-align: center !important;
   }
@@ -172,7 +178,11 @@ div#copyright a:hover {
     font-size: 18px !important;
     text-align: center !important;
   }
-
+  .home {
+    .row {
+      flex-direction: column !important;
+    }
+  }
   .content {
     text-align: center;
     padding: 60px 0;
@@ -198,5 +208,11 @@ div#copyright a:hover {
 
   .work h1 {
     font-size: 1.5rem !important;
+  }
+
+  .d-flex {
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
   }
 }
