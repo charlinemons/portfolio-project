@@ -44,6 +44,10 @@ a {
   text-decoration: none !important;
 }
 
+.active {
+  color: var(--hightlight-color) !important;
+}
+
 a:hover {
   color: var(--hightlight-color);
 }
@@ -56,6 +60,9 @@ a.nav-link:hover {
   color: var(--text-color);
 }
 
+.highlight {
+  color: var(--hightlight-color);
+}
 .navbar-toggler {
   color: transparent !important;
   border: none !important;
@@ -72,16 +79,6 @@ a.nav-link:hover {
   font-size: 28px !important;
   line-height: 120%;
   font-weight: normal;
-  text-align: right !important;
-}
-
-.row > .col {
-  padding: 25px 0px 0px 15px;
-}
-
-.col h2 {
-  margin: 0 50px 10px 0 !important;
-  font-size: 25px !important;
 }
 
 .col img {
@@ -95,6 +92,17 @@ a.nav-link:hover {
   font-size: 18px !important;
   line-height: 27px !important;
   padding: 15px 30px !important;
+  font-weight: bold !important;
+}
+
+.btn-branding-outline {
+  color: var(--text-color) !important;
+  border: 1px solid var(--text-color) !important;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px !important;
+  font-weight: bold !important;
 }
 
 .btn-branding:hover {
@@ -102,14 +110,20 @@ a.nav-link:hover {
   color: var(--hightlight-color) !important;
 }
 
+.btn-branding-outline:hover {
+  background: var(--hightlight-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--hightlight-color) !important;
+}
+
 .content {
   padding: 120px 0;
 }
 
-.about .row > .col {
-  padding: 0px 15px;
+.project {
+  margin: 50px;
+  text-align: center;
 }
-
 /* work page */
 .work h1 {
   text-align: center;
@@ -117,6 +131,28 @@ a.nav-link:hover {
 }
 
 /* Footer */
+footer {
+  margin: 120px 0 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--text-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--primary-color);
+  background: var(--hightlight-color);
+}
+
 .contact-link {
   color: var(--text-color);
   text-align: center !important;
@@ -124,20 +160,6 @@ a.nav-link:hover {
   font-style: normal;
   font-weight: bold;
   line-height: 100%;
-}
-
-.contact {
-  padding: 50px;
-  border: 1px solid var(--text-color);
-  margin: 0 -1px -1px 0;
-  text-align: center;
-}
-
-#contact > .col {
-  padding: 50px;
-  border: 1px solid var(--text-color);
-  margin: 0 -1px -1px 0;
-  text-align: center;
 }
 
 div#copyright {
@@ -172,17 +194,14 @@ div#copyright a:hover {
   }
   .hero h2 {
     font-size: 36px;
-    text-align: center !important;
   }
   .hero p {
     font-size: 18px !important;
-    text-align: center !important;
   }
-  .home {
-    .row {
-      flex-direction: column !important;
-    }
+  .home .row {
+    flex-direction: column !important;
   }
+
   .content {
     text-align: center;
     padding: 60px 0;
@@ -202,9 +221,6 @@ div#copyright a:hover {
   .row {
     flex-direction: column;
   }
-  .row > .col {
-    padding: 15px 25px;
-  }
 
   .work h1 {
     font-size: 1.5rem !important;
@@ -214,5 +230,9 @@ div#copyright a:hover {
     display: flex !important;
     flex-direction: column;
     gap: 15px;
+  }
+
+  nav.navbar.d-flex.navbar-expand-lg.navbar-light {
+    flex-direction: row;
   }
 }

@@ -43,32 +43,38 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">Charline Mons</a>
+      <nav class="navbar d-flex navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <i class="fa-solid fa-code"></i>
+          Charline Mons
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNav"
+          data-target="#navbar-list-6"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbar-list-6"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/about.html">About me</a>
+              <a class="nav-link active" href="/about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/work.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact me</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -76,7 +82,7 @@
       <div class="content about">
         <div class="row">
           <div class="col-lg-6">
-            <h1>Hello I am Charline Mons</h1>
+            <h1>Hello I am <span class="highlight">Charline</span> Mons</h1>
             <h2>Front developer based in Montreal</h2>
             <p>
               For anyone who wants to start learning code, this workshop is very
@@ -105,20 +111,41 @@
       </div>
     </div>
 
-    <div id="contact" class="row">
-      <div class="col">
-        <a href="mailto:" target="_blank" class="contact-link"
+    <footer>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto:"
+          target="_blank"
+          class="contact-link"
+          title="Contact me"
           >charline.mons@gmail.com</a
         >
       </div>
-      <div class="col">
-        <a href="mailto:" target="_blank" class="contact-link">Linkedin</a>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://github.com/charlinemons"
+          target="_blank"
+          title="GitHub Charline Mons"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="www.linkedin.com/in/charline-mons"
+          target="_blank"
+          title="Linkedin Charline Mons"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/charlycade"
+          target="_blank"
+          title="Charlycade Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
       </div>
-    </div>
-
+    </footer>
     <div id="copyright">
-      This project was coded by <a href="" target="_blank">Charline Mons</a> and
-      on is open-sourced <a href="" target="_blank">GitHub</a> and hosted on
+      This project was coded by
+      <a href="" target="_blank">Charline Mons</a> and on is open-sourced
+      <a href="" target="_blank">GitHub</a> and hosted on
       <a href="" target="_blank">Netlify</a>
     </div>
   </body>
