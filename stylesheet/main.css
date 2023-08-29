@@ -221,16 +221,18 @@ div#copyright a:hover {
   .row {
     flex-direction: column;
   }
-
+  .project {
+    margin: 15px !important;
+  }
   .work h1 {
     font-size: 1.5rem !important;
   }
-
+  /* 
   .d-flex {
     display: flex !important;
     flex-direction: column;
     gap: 15px;
-  }
+  } */
 
   nav.navbar.d-flex.navbar-expand-lg.navbar-light {
     flex-direction: row;
